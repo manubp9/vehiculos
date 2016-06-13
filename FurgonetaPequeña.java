@@ -5,29 +5,24 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class FurgonetaPequeña extends Vehiculo
+public class FurgonetaPequeña extends VehiculoPequeño
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
     /**
-     * Constructor for objects of class FurgonetaPequeña
+     * Constructor for objects of class Coche
      */
-    public FurgonetaPequeña()
+    public FurgonetaPequeña(int numeroPlazas,Marcas marca,int kilometraje,int antiguedad,int numeroId,
+    boolean cumpleNormativa,int revision)
     {
-        // initialise instance variables
-        x = 0;
-    }
+        super(numeroPlazas, marca,kilometraje,antiguedad,numeroId);
+        if (!super.getMarca().equals("FORD"))
+        {
+            super.setRevision(1);
+        }
+        if(numeroPlazas<= 7)
+        {
+            super.setCumpleNormativa() ;
+        }
+    
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
     }
 }

@@ -5,29 +5,28 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Camion extends Vehiculo
+public class Camion extends VehiculoGrande
 {
     // instance variables - replace the example below with your own
-    private int x;
 
     /**
      * Constructor for objects of class Camion
      */
-    public Camion()
+    public Camion(int peso,Marcas marca,int kilometraje,int antiguedad,int numeroId)
     {
-        // initialise instance variables
-        x = 0;
-    }
+        super(peso,marca,kilometraje,antiguedad,numeroId);
+        if (super.getMarca().equals("FORD")|| super.getMarca().equals("FIAT"))
+        {
+            super.setArticulado();
+        }
+        if(super.getArticulado() && getPeso()<3000)
+        {
+            super.setCumpleNormativa();
+        }
+        if(!super.getArticulado() && getPeso()<2000)
+        {
+            super.setCumpleNormativa();
+        }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
     }
 }
