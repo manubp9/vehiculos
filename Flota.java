@@ -9,14 +9,15 @@ public class Flota
 {
     // instance variables - replace the example below with your own
     private ArrayList<Vehiculo> vehiculos;
+    private int ident;
 
     /**
      * Constructor for objects of class Flota
      */
     public Flota()
     {
-        
         vehiculos = new ArrayList<>();
+        ident = 1;
     }
 
     /**
@@ -24,25 +25,42 @@ public class Flota
      */
     public void addVehiculo(Vehiculo vehiculo)
     {
-        int id = 1;
-        vehiculo.setNumeroId(id);
+
         vehiculos.add(vehiculo);
-        id++;
-    }
-    /**
-     * elimina un vehiculo
-     */ 
-    public void removeVehiculo(int numeroId){
-        boolean encontrado = false;
-        int i = 0;
-        while(i < vehiculos.size()&& !encontrado){
-            if(vehiculos.get(i).getNumeroId() == numeroId)
-            {
-                vehiculos.remove(i);
-            }
         
-            
+        while(ident<vehiculos.size()){
+            incrementIdent();
+
         }
-        
-    }}
+        vehiculo.setNumeroId(ident);
+    }
+
+    public void removeVehiculo(int id) {
+        boolean vehiculoEncontrado = false;
+        int i = 0;
+        while(i<vehiculos.size() && vehiculoEncontrado) {
+            if(vehiculos.get(i).getNumeroId() == id) {
+                vehiculos.remove(i);
+                vehiculoEncontrado = true;
+            }
+            i++;
+        }
+    }
+
+    /**
+     * incrementa el id del vehiculo
+     */
+    public void incrementIdent()
+    {
+        ident++;
+    }
+
+    /**
+     * 
+     */
+    public void marcaMayoritaria()
+    {
+
+    }
+}
 

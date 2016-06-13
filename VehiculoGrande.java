@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class VehiculoGrande extends Vehiculo
+public abstract class VehiculoGrande extends Vehiculo
 {
     // instance variables - replace the example below with your own
     private int peso;
@@ -15,7 +15,7 @@ public class VehiculoGrande extends Vehiculo
     /**
      * Constructor for objects of class VehiculoGrande
      */
-    public VehiculoGrande(int peso,Marcas marca,int kilometraje,int antiguedad)
+    public  VehiculoGrande(int peso,Marcas marca,int kilometraje,int antiguedad)
     {
         super(marca,kilometraje,antiguedad);
         this.peso = peso;

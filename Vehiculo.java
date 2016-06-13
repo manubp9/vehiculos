@@ -22,7 +22,7 @@ public abstract class Vehiculo
         this.marca = marca;
         this.kilometraje = kilometraje;
         this.antiguedad = antiguedad;
-        numeroId = 0;
+        numeroId = 1;
         
     }
     /**
@@ -53,13 +53,7 @@ public abstract class Vehiculo
     {
         return numeroId;
     }
-    /**
-     * 
-     */
-    public void incrementId()
-    {
-        numeroId++;
-    }
+    
     /**
      * 
      */
