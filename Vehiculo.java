@@ -17,12 +17,12 @@ public abstract class Vehiculo
     /**
      * Constructor for objects of class Vehiculo
      */
-    public Vehiculo(Marcas marca,int kilometraje,int antiguedad,int numeroId)
+    public Vehiculo(Marcas marca,int kilometraje,int antiguedad)
     {
         this.marca = marca;
         this.kilometraje = kilometraje;
         this.antiguedad = antiguedad;
-        this.numeroId = numeroId;
+        numeroId = 0;
         
     }
     /**
@@ -52,5 +52,20 @@ public abstract class Vehiculo
     public int getNumeroId()
     {
         return numeroId;
+    }
+    /**
+     * 
+     */
+    public void incrementId()
+    {
+        numeroId++;
+    }
+    /**
+     * 
+     */
+    public void setNumeroId(int identificador)
+    {
+        numeroId = identificador;
+        
     }
 }

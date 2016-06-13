@@ -15,9 +15,9 @@ public abstract class VehiculoPequeño extends Vehiculo
     /**
      * Constructor for objects of class VehiculoPequeño
      */
-    public VehiculoPequeño(int numeroPlazas,Marcas marca,int kilometraje,int antiguedad,int numeroId)
+    public VehiculoPequeño(int numeroPlazas,Marcas marca,int kilometraje,int antiguedad)
     {
-        super(marca,kilometraje,antiguedad,numeroId);
+        super(marca,kilometraje,antiguedad);
         this.numeroPlazas = numeroPlazas;
         cumpleNormativa = false;
         revision = 2;

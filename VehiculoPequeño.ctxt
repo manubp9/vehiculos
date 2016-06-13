@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=numeroPlazas\ marca\ kilometraje\ antiguedad\ numeroId
-comment0.target=VehiculoPeque\u00F1o(int,\ Marcas,\ int,\ int,\ int)
+comment0.params=numeroPlazas\ marca\ kilometraje\ antiguedad
+comment0.target=VehiculoPeque\u00F1o(int,\ Marcas,\ int,\ int)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ VehiculoPeque\u00F1o\r\n
 comment1.params=
 comment1.target=int\ getNumeroPlazas()

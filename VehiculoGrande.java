@@ -15,9 +15,9 @@ public class VehiculoGrande extends Vehiculo
     /**
      * Constructor for objects of class VehiculoGrande
      */
-    public VehiculoGrande(int peso,Marcas marca,int kilometraje,int antiguedad,int numeroId)
+    public VehiculoGrande(int peso,Marcas marca,int kilometraje,int antiguedad)
     {
-        super(marca,kilometraje,antiguedad,numeroId);
+        super(marca,kilometraje,antiguedad);
         this.peso = peso;
         articulado = false;
         cumpleNormativa = false;

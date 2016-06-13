@@ -7,8 +7,8 @@
  */
 public class FurgonetaGrande extends VehiculoGrande
 {
-    public FurgonetaGrande(int peso,Marcas marca,int kilometraje,int antiguedad,int numeroId)
+    public FurgonetaGrande(int peso,Marcas marca,int kilometraje,int antiguedad)
     {
-        super(peso,marca,kilometraje,antiguedad,numeroId);
+        super(peso,marca,kilometraje,antiguedad);
     }
 }

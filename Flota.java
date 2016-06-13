@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Flota here.
  * 
@@ -8,26 +8,41 @@
 public class Flota
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private ArrayList<Vehiculo> vehiculos;
 
     /**
      * Constructor for objects of class Flota
      */
     public Flota()
     {
-        // initialise instance variables
-        x = 0;
+        
+        vehiculos = new ArrayList<>();
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * añade un vehiculo
      */
-    public int sampleMethod(int y)
+    public void addVehiculo(Vehiculo vehiculo)
     {
-        // put your code here
-        return x + y;
+        int id = 1;
+        vehiculo.setNumeroId(id);
+        vehiculos.add(vehiculo);
+        id++;
     }
-}
+    /**
+     * elimina un vehiculo
+     */ 
+    public void removeVehiculo(int numeroId){
+        boolean encontrado = false;
+        int i = 0;
+        while(i < vehiculos.size()&& !encontrado){
+            if(vehiculos.get(i).getNumeroId() == numeroId)
+            {
+                vehiculos.remove(i);
+            }
+        
+            
+        }
+        
+    }}
+

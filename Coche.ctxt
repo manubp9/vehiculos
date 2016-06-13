@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.params=numeroPlazas\ marca\ kilometraje\ antiguedad\ numeroId\ cumpleNormativa\ revision
-comment0.target=Coche(int,\ Marcas,\ int,\ int,\ int,\ boolean,\ int)
+comment0.params=numeroPlazas\ marca\ kilometraje\ antiguedad\ cumpleNormativa\ revision
+comment0.target=Coche(int,\ Marcas,\ int,\ int,\ boolean,\ int)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Coche\r\n
 numComments=1

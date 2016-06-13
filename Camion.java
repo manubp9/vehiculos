@@ -12,9 +12,8 @@ public class Camion extends VehiculoGrande
     /**
      * Constructor for objects of class Camion
      */
-    public Camion(int peso,Marcas marca,int kilometraje,int antiguedad,int numeroId)
-    {
-        super(peso,marca,kilometraje,antiguedad,numeroId);
+    public Camion(int peso,Marcas marca,int kilometraje,int antiguedad)    {
+        super(peso,marca,kilometraje,antiguedad);
         if (super.getMarca().equals("FORD")|| super.getMarca().equals("FIAT"))
         {
             super.setArticulado();

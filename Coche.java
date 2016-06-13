@@ -12,10 +12,10 @@ public class Coche extends VehiculoPequeño
     /**
      * Constructor for objects of class Coche
      */
-    public Coche(int numeroPlazas,Marcas marca,int kilometraje,int antiguedad,int numeroId,
+    public Coche(int numeroPlazas,Marcas marca,int kilometraje,int antiguedad,
     boolean cumpleNormativa,int revision)
     {
-        super(numeroPlazas, marca,kilometraje,antiguedad,numeroId);
+        super(numeroPlazas, marca,kilometraje,antiguedad);
         if (!super.getMarca().equals("FORD"))
         {
             super.setRevision(1);
